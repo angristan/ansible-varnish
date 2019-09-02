@@ -1,0 +1,11 @@
+---
+
+- name: restart varnish
+  service:
+    name: varnish
+    state: restarted
+
+- name: restart varnishncsa
+  service:
+    name: varnishncsa
+    state: restarted

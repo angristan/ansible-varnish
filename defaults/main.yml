@@ -1,0 +1,7 @@
+---
+varnish_version: "6.2"
+varnish_apt_repo: deb https://packagecloud.io/varnishcache/{{ varnish_packagecloud_repo }}/{{ ansible_distribution | lower }}/ {{ ansible_distribution_release }} main
+
+varnish_default_vcl_source_name: "default.vcl"
+varnishncsa_x_forwarded_for_enabled: false
+
