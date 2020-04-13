@@ -48,9 +48,3 @@
     name: varnishncsa
     state: started
     enabled: true
-
-- name: Enable and start varnishncsa service
-  service:
-    name: varnishncsa
-    state: started
-    enabled: true
