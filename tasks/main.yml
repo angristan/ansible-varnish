@@ -33,6 +33,11 @@
     mode: 0644
   notify: restart varnish
 
+- name: Create /etc/systemd/system/varnishncsa.service.d/
+  file:
+    path: /etc/systemd/system/varnishncsa.service.d/
+    state: directory
+
 - name: Override varnishncsa systemd service for log format
   template:
     src: systemd/varnishncsa-override.conf.j2
